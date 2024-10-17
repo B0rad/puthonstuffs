@@ -1,0 +1,19 @@
+import random, sys, copy
+H = ['heads']
+T = ['tails']
+flipResult = []
+numberOfStreaks = 0
+
+for experimentNumber in range(50):
+    beforeFlip = [H, T]
+    flipResult += random.choice(beforeFlip)
+    
+
+    print(flipResult[experimentNumber])
+
+
+
+
+
+
+print('Chance of streak : %s%%' % (numberOfStreaks / 100))
